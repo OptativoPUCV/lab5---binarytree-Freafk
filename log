@@ -196,3 +196,16 @@ Fri 21 Apr 2023 05:49:11 AM UTC:
  1 file changed, 4 insertions(+)
  tests:  0|0
 9709b11
+Fri 21 Apr 2023 05:50:42 AM UTC: 
+ treemap.c | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:138:30: error: expected ‘;’ before ‘return’
+  138 |         node->right->parent=u
+      |                              ^
+      |                              ;
+  139 |         return;
+      |         ~~~~~~                
+Compilation failed
+7e80b3b
