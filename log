@@ -47,3 +47,9 @@ treemap.c:85:5: error: ‘else’ without a previous ‘if’
       |     ^~~~
 Compilation failed
 101b065
+Fri 21 Apr 2023 04:48:52 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+ba5a55a
