@@ -155,6 +155,15 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     
   }
+  if(node->left!=NULL && node->right!=NULL){
+    TreeNode *hijoDerecho=node->right;
+    TreeNode *minimumHijoDerecho=minimum(hijoDerecho);
+    node->pair->key=minimumHijoDerecho->pair->key;
+    node->pair->value=minimumHijoDerecho->pair->value;
+    removeNode(tree, minimumHijoDerecho);
+    
+    
+  }
 
   
 }
