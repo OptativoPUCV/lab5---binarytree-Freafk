@@ -123,6 +123,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
   }
   if(node->left!=NULL || node->right!=NULL){
+    printf("HOLAAAA");
     TreeNode *aux=node->parent;
     int r=tree->lower_than(node->pair->key,aux->pair->key);
     printf("HOLAAAA");
