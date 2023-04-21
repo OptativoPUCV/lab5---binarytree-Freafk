@@ -163,3 +163,8 @@ treemap.c:139:7: error: ‘aux’ undeclared (first use in this function)
 treemap.c:139:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 724c5e6
+Fri 21 Apr 2023 05:36:51 AM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+80b8fec
