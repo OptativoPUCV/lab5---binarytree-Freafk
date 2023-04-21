@@ -20,3 +20,17 @@ Fri 21 Apr 2023 04:42:18 AM UTC:
  tests:  4|7
 total_score: 5/70
 5a93e65
+Fri 21 Apr 2023 04:47:03 AM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:82:16: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘void *’ [-Werror=format=]
+   82 |       printf("%d",tree->current->pair->key);
+      |               ~^  ~~~~~~~~~~~~~~~~~~~~~~~~
+      |                |                     |
+      |                int                   void *
+      |               %p
+cc1: all warnings being treated as errors
+Compilation failed
+b48fd9d
