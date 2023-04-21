@@ -122,6 +122,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       return;
     }
   }
+  printf("HOLII");
   if(node->left!=NULL || node->right!=NULL){
     printf("HOLAAAA");
     TreeNode *aux=node->parent;
