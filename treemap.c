@@ -170,7 +170,6 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     node->pair->key=minimumHijoDerecho->pair->key;
     node->pair->value=minimumHijoDerecho->pair->value;
     removeNode(tree, minimumHijoDerecho);
-    return;
     
     
   }
