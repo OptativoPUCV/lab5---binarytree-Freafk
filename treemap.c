@@ -110,6 +110,8 @@ if(x->left==NULL){
 void removeNode(TreeMap * tree, TreeNode* node) {
 
 
+  if(node==NULL)return;
+  
   if(node->left==NULL && node->right==NULL){
     TreeNode *aux=node->parent;
     int r=tree->lower_than(node->pair->key,aux->pair->key);
