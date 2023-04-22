@@ -160,6 +160,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       else{
         tree->root=node->right;
         node->right->parent=NULL;
+        return;
       }
     }
     
