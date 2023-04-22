@@ -227,9 +227,28 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+  if(tree!=NULL){
+    tree->current=tree->root;
+    return tree->root->pair;
+  }
+  return NULL;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+
+  if(tree->current->parent->right){
+    TreeNode *x=tree->root;
+    TreeNode *uwu=tree->current;
+    while(1)
+    {
+      if(tree->lower_than(uwu->pair->key, x->p->pair->key)){
+
+
+    }  
+  }
+  else{
+    tree->current=tree->current->parent;
+    return tree->current->pair;
+  }
     return NULL;
 }
