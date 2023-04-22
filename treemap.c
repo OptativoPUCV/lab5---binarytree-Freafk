@@ -165,11 +165,12 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     
   }
-  
+  else{
     TreeNode *mini= minimum(node->right);
     node->pair->key=mini->pair->key;
     node->pair->value=mini->pair->value;
     removeNode(tree, mini);
+  }
 
     
     
