@@ -476,3 +476,20 @@ treemap.c:242:44: note: expected ‘void *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 d198bdb
+Sat 22 Apr 2023 02:09:30 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:242:58: error: expected statement before ‘)’ token
+  242 |     if(tree->lower_than(key,aux->pair->key) && aux!=NULL)){
+      |                                                          ^
+treemap.c:242:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  242 |     if(tree->lower_than(key,aux->pair->key) && aux!=NULL)){
+      |     ^~
+treemap.c:242:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  242 |     if(tree->lower_than(key,aux->pair->key) && aux!=NULL)){
+      |                                                           ^
+cc1: all warnings being treated as errors
+Compilation failed
+7a995d4
