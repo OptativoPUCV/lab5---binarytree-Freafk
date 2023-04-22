@@ -232,13 +232,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
       tree->current=aux;
       return tree->current->pair;
     }
+    ub_node=aux;
     if(tree->lower_than(key,aux->pair->key)){
       aux=aux->left;
     }
     else{
       aux=aux->right;
     }
-    ub_node=aux;
+    
   }
   
   return ub_node->pair;
