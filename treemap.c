@@ -172,6 +172,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     node->pair->key=mini->pair->key;
     node->pair->value=mini->pair->value;
     removeNode(tree, mini);
+    return;
   }
 
     
