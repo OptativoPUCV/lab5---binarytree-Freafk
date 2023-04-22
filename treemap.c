@@ -225,7 +225,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
 
   TreeNode *aux=tree->root;
-  TreeNode *ub_node;
+  TreeNode *ub_node=aux;
   while(aux!=NULL){
   
     if(is_equal(tree, key, aux->pair->key)){
