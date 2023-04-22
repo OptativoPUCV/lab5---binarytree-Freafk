@@ -228,19 +228,16 @@ Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode *ub_node=aux;
   while(aux!=NULL){
   
+    ub_node=aux;
     if(is_equal(tree, key, aux->pair->key)){
       tree->current=aux;
       return tree->current->pair;
     }
     if(tree->lower_than(key,aux->pair->key)){
       aux=aux->left;
-      ub_node=aux;
     }
     else{
-      
-      
       aux=aux->right;
-      
     }
     
   }
