@@ -236,19 +236,21 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
 
-  if(tree->current->parent->right){
-    TreeNode *x=tree->root;
-    TreeNode *uwu=tree->current;
-    while(1)
-    {
-       if(tree->lower_than(uwu->pair->key, x->p->pair->key)){
-       }
-
-    }  
-  }
-  else{
-    tree->current=tree->current->parent;
+  if(tree->current->right!=NULL){
+    tree->current=tree->current->right;
     return tree->current->pair;
   }
+  else{
+    TreeNode *x=tree->current->parent;
+    while(x!=NULL){
+      if(tree->lower_than(tree->current->pair->key,x->pair->key))
+      {
+        tree->current=x;
+        return tree->current->pair;
+      }
+      x=x->parent;
+    }
     return NULL;
+    
+  }
 }
