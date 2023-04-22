@@ -241,8 +241,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     TreeNode *uwu=tree->current;
     while(1)
     {
-      if(tree->lower_than(uwu->pair->key, x->p->pair->key)){
-
+       if(tree->lower_than(uwu->pair->key, x->p->pair->key)){
+       }
 
     }  
   }
