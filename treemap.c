@@ -253,4 +253,5 @@ Pair * nextTreeMap(TreeMap * tree) {
     return NULL;
     
   }
+  return NULL;
 }
