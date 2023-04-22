@@ -245,13 +245,15 @@ Pair * upperBound(TreeMap * tree, void* key) {
     
     
   }
-  if(ub_node!=NULL){
+  if(tree->lower_than(ub_node->pair->key, key)){
+    return NULL;
+    
+  }
+  else{
     tree->current=ub_node;
     return ub_node->pair;
   }
-  else{
-    return NULL;
-  }
+  
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
