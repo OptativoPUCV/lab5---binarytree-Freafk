@@ -165,11 +165,12 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     
   }
   if(node->left!=NULL && node->right!=NULL){
-    TreeNode *hijoDerecho=node->right;
-    TreeNode *minimumHijoDerecho=minimum(hijoDerecho);
-    node->pair->key=minimumHijoDerecho->pair->key;
-    node->pair->value=minimumHijoDerecho->pair->value;
-    removeNode(tree, minimumHijoDerecho);
+    TreeNode *x=node->right;
+    TreeNode *minimum=minimum(x);
+    node->pair->key=minimum->pair->key;
+    node->pair->value=minimum->pair->value;
+    removeNode(tree, minimum);
+
     
     
   }
